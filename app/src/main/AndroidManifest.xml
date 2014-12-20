@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.pierrox.lightning_launcher.llscript.thirdpartyapitest">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher">
+
+        <activity
+            android:name=".Test"
+            android:label="@string/browse_name"
+            android:icon="@drawable/ic_launcher"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="net.pierrox.lightning_launcher.script.ENUMERATE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Parser"
+            android:label="@string/browse_name"
+            android:icon="@drawable/ic_launcher"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="net.pierrox.lightning_launcher.script.PARSE"/>
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>
