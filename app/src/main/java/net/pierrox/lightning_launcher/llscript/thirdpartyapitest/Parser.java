@@ -27,6 +27,9 @@ import static android.accounts.AccountManager.KEY_AUTHTOKEN;
 /**
  * Created by Lukas on 29.11.2014.
  */
+
+//test
+
 public class Parser extends Activity{
 
     String[] appsToQuery;
